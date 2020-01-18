@@ -1,0 +1,71 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Jan 15, 2020 at 02:12 PM
+-- Server version: 8.0.17
+-- PHP Version: 7.3.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `online_shop`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `id` int(10) NOT NULL,
+  `p_name` varchar(200) NOT NULL,
+  `price` double(10,2) NOT NULL,
+  `image` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `p_name`, `price`, `image`) VALUES
+(1, 'Harley Benton HWY-25BKS', 98.00, 'guitar1.jpg'),
+(2, 'Epiphone Les Paul', 122.00, 'guitar2.jpg'),
+(3, 'Squier Bullet Stratocaster HT', 110.00, 'guitar3.jpg'),
+(4, 'Epiphone Les Paul Express', 165.00, 'guitar4.jpg'),
+(5, 'Jackson JS11 Dinky', 170.00, 'guitar5.jpg'),
+(6, 'Epiphone Les Paul Special II', 180.00, 'guitar6.jpg'),
+(7, 'Epiphone SG Special VE', 180.00, 'guitar7.jpg'),
+(8, 'Jackson JS 1X Rhoads Minion', 178.00, 'guitar8.jpg'),
+(9, 'Squier Affinity Stratocaster HSS', 230.00, 'guitar9.jpg'),
+(10, 'Gretsch G5415 Special Jet', 250.00, 'guitar10.jpg'),
+(11, 'Jackson JS-22 Dinky Arch Top', 230.00, 'guitar11.jpg'),
+(12, 'Jackson JS22-7 Dinky Satin Black', 245.00, 'guitar12.jpg'),
+(13, 'Gretsch G5103 Corvette III', 245.00, 'guitar13.jpg'),
+(14, 'Squier Standard Telecaster', 236.00, 'guitar14.jpg');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
